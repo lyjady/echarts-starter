@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>折线图</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      // 创建Echarts实例, 并挂载到指定的容器(div), 变量名不能叫echarts
+      let chart = echarts.init(document.querySelector('#echarts'))
+      // 配置项, Echarts的显示的效果都是由配置项来进行配置
+      let option = {
+        title: {
+          text: '月份销量统计图'
+        },
+        tooltip: {
+          trigger: 'axis'
+        },
+        xAxis: {
+          type: 'category',
+          data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+        },
+        yAxis: {
+          type: 'value'
+        },
+        series: [
+          {
+            name: '销量',
+            type: 'line',
+            data: [322, 433, 321, 423, 546, 435, 646, 645, 934, 1032, 1102, 602]
+          }
+        ]
+      }
+      chart.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>

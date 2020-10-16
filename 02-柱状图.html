@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>柱状图</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      // 创建Echarts实例, 并挂载到指定的容器(div), 变量名不能叫echarts
+      let chart = echarts.init(document.querySelector('#echarts'))
+      // 配置项, Echarts的显示的效果都是由配置项来进行配置
+      let option = {
+        // 设置标题及其样式
+        title: {
+          text: '显卡销量图'
+        },
+        // 要让柱状图反转只需要改变xAxis和yAxis的内容即可
+        // x轴设置
+        xAxis: {
+          // 将x轴设置成类目轴
+          type: 'category',
+          // 类别数据
+          data: ['RTX 3060', 'RTX 3070', 'RTX 3080', 'RTX 3090']
+        },
+        // y轴设置
+        yAxis: {
+          // y轴设置成数据
+          type: 'value'
+        },
+        // 数值设置
+        label: {
+          // 显示数数值
+          show: true,
+          // 数值旋转角度
+          rotate: 30,
+          // 数值位置设置
+          position: 'inside'
+        },
+        // 设置柱的宽度
+        barWidth: '50%',
+        // 系列设置, 设置图标类型和数据等信息
+        series: {
+          name: '销量',
+          // 图表类型是柱状图
+          type: 'bar',
+          // 对应xAxis中的data数组在y轴显示的数据
+          data: [2092, 1892, 1823, 1654],
+          // 最值
+          markPoint: {
+            data: [
+              {
+                type: 'max',
+                name: '最大销量'
+              },
+              {
+                type: 'min',
+                name: '最小销量'
+              }
+            ]
+          },
+          // 平均值
+          markLine: {
+            data: [
+              {
+                type: 'average',
+                name: '平均值'
+              }
+            ]
+          }
+        }
+      }
+      chart.setOption(option)
+    })
+  </script>
+</head>
+<body>
+<div id="echarts" style="width: 600px; height: 600px"></div>
+</body>
+</html>

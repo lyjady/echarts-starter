@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title、tooltip、toolbox、legend设置</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      // 创建Echarts实例, 并挂载到指定的容器(div), 变量名不能叫echarts
+      let chart = echarts.init(document.querySelector('#echarts'))
+      // 配置项, Echarts的显示的效果都是由配置项来进行配置
+      let option = {
+        // 设置标题及其样式
+        title: {
+          text: '显卡销量图',
+          // 标题样式
+          textStyle: {
+            color: 'red',
+            fontSize: 30,
+          },
+          // 标题边框设置
+          borderColor: 'skyblue',
+          borderWidth: 3,
+          borderRadius: 5,
+          // 标题位置设置
+          top: 10,
+          left: 50
+        },
+        // tooltip设置鼠标移动时图表信息的显示
+        tooltip: {
+          // item在鼠标与图形发生交互时触发(主要用于无类目轴来使用), axis鼠标在与轴发生交互时触发(主要用于类目轴使用)
+          trigger: 'axis',
+          // 鼠标与目标发生哪种交互时触发
+          triggerOn: 'mousemove',
+          // 显示的文字模板, 在不同的图表类型中相同的模板字符代表着不同的意思
+          // 柱状图中的a表示series对应的name, b表示x轴, c表示y轴
+          // formatter还可是一个函数, 函数会传入一个参数, 该参数是当前的鼠标所在元素的数据信息
+          formatter: '{b}的{a}是{c}'
+        },
+        // toolbox提供了Echarts自带的堆图表操作的功能
+        toolbox: {
+          feature: {
+            // 将图表保存为图片
+            saveAsImage: {},
+            // 数据视图, 将当前图表的数据已数据的方式展示, 可以修改数据, 修改完会作用域于图表
+            dataView: {},
+            // 重置数据视图中修改的数据
+            restore: {},
+            // 区域缩放, 显示选中区域的图表
+            dataZoom: {},
+            // 动态切换图表的类型
+            magicType: {
+              type: ['bar', 'line']
+            }
+          }
+        },
+        // 切换series, 数组的值要匹配series的name
+        legend: {
+          data: ['销量', '性能']
+        },
+        xAxis: {
+          type: 'category',
+          data: ['RTX 3060', 'RTX 3070', 'RTX 3080', 'RTX 3090']
+        },
+        yAxis: {
+          type: 'value'
+        },
+        label: {
+          show: true,
+          rotate: 30
+        },
+        barWidth: '50%',
+        series: [
+          {
+            name: '销量',
+            type: 'bar',
+            data: [2092, 1892, 1823, 1654],
+          },
+          {
+            name: '性能',
+            type: 'bar',
+            data: [456, 546, 657, 765]
+          }
+        ]
+      }
+      chart.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 600px; height: 600px"></div>
+</body>
+</html>

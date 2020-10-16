@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>echarts quick start</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      // 创建Echarts实例, 并挂载到指定的容器(div), 变量名不能叫echarts
+      let chart = echarts.init(document.querySelector('#echarts'))
+      // 配置项, Echarts的显示的效果都是由配置项来进行配置
+      let option = {
+        // 设置标题及其样式
+        title: {
+          // 标题
+          text: 'echarts quick start',
+          // 标题样式
+          textStyle: {
+            color: 'red'
+          }
+        },
+        // x轴设置
+        xAxis: {
+          type: 'category',
+          data: ['RTX 3060', 'RTX 3070', 'RTX 3080', 'RTX 3090']
+        },
+        // y轴设置
+        yAxis: {
+          type: 'value'
+        },
+        // 系列设置, 设置图标类型和数据等信息
+        series: {
+          name: '销量',
+          type: 'bar',
+          data: [2092, 1892, 1823, 1654]
+        }
+      }
+      chart.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 600px; height: 600px"></div>
+</body>
+</html>
