@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>饼图</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#echarts'))
+      let data = [
+        {name: 'Java', value: 34.2},
+        {name: 'C', value: 38.2},
+        {name: 'C++', value: 31.2},
+        {name: 'Javascript', value: 28.2},
+        {name: 'Python', value: 30.2},
+        {name: 'Golang', value: 26.2}
+      ]
+      let option = {
+        title: {
+          text: '编程语言使用占比'
+        },
+        tooltip: {
+          type: 'item'
+        },
+        // 饼图没有坐标轴没有必要设置xAxis和yAxis
+        series: [
+          {
+            type: 'pie',
+            data
+          }
+        ]
+      }
+      charts.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>

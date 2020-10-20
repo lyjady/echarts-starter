@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>坐标图表设置</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#echarts'))
+      let option = {
+        title: {
+          text: '显卡销量图'
+        },
+        // 显示网格并设置相应的样式
+        grid: {
+          show: false,
+          borderWidth: 20,
+          color: 'skyblue',
+          top: 40,
+          right: 40
+        },
+        // 数据缩放, 用于进行数据的过滤
+        dataZoom: [
+          {
+            // 缩放的类型inside表示鼠标在图表里滚动时进行过滤, slider表示华滑动滑块记性数据的过滤(默认值是slider)
+            type: 'slider',
+          },
+          {
+            type: 'slider',
+            // 表示对哪个轴进行数据过滤, yAxisIndex表示对y轴进行过滤, xAxisIndex表示对x轴进行过滤
+            // yAxisIndex指定一个数组, 数组里面的数字就是要展示的那个轴上的索引号(按照数据的声明顺序)
+            yAxisIndex: [0],
+            // 设置初始过滤的区间, 按照数据最大值的百分比进行过滤
+            // 初始展示的区间就是从最大值的10% ~ 最大值的30%
+            start: 10,
+            end: 30
+          }
+        ],
+        xAxis: {
+          type: 'category',
+          data: ['RTX 3060', 'RTX 3070', 'RTX 3080', 'RTX 3090']
+        },
+        yAxis: {
+          type: 'value'
+        },
+        label: {
+          show: true,
+          rotate: 30,
+          position: 'inside'
+        },
+        barWidth: '50%',
+        series: {
+          name: '销量',
+          type: 'bar',
+          data: [2092, 1892, 1823, 1654],
+          markPoint: {
+            data: [
+              {
+                type: 'max',
+                name: '最大销量'
+              },
+              {
+                type: 'min',
+                name: '最小销量'
+              }
+            ]
+          },
+          markLine: {
+            data: [
+              {
+                type: 'average',
+                name: '平均值'
+              }
+            ]
+          }
+        }
+      }
+      charts.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>
