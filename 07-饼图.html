@@ -8,6 +8,8 @@
     addEventListener('load', () => {
       let charts = echarts.init(document.querySelector('#echarts'))
       let data = [
+        // 饼图的数据必须是一个数组, 数组内包含一个对象, 对象必须有name与value属性
+        // name表示类型, value表示数据
         {name: 'Java', value: 34.2},
         {name: 'C', value: 38.2},
         {name: 'C++', value: 31.2},
