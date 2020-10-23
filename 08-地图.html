@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>地图</title>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+  <div id="echarts" style="width: 600px; height: 600px; margin: auto auto"></div>
+  <script>
+    let charts = echarts.init(document.querySelector('#echarts'))
+    $.get('map/china.json', res => {
+      // 向echarts注册地图
+      echarts.registerMap ('china', res)
+      let option = {
+        geo: {
+          type: 'map',
+          // 关联注册的地图, 名字需要与注册的名字一致
+          map: 'china',
+          // 允许将地图滚动拖放
+          roam: true,
+          // 显示名称
+          label: {
+            show: false
+          },
+          // 地图缩放比例
+          zoom: 1,
+          // 初始化展示时中心点的经纬度
+          // center: [12, 12]
+        }
+      }
+      charts.setOption(option)
+    })
+  </script>
+</body>
+</html>

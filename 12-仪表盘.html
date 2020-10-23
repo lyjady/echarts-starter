@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>仪表盘</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#charts'))
+      let option = {
+        series: [
+          {
+            type: 'gauge',
+            data: [
+              {
+                value: 97,
+                // 设置指针样式
+                itemStyle: {
+                  color: 'skyblue'
+                }
+              },
+              {
+                value: 134
+              }
+            ],
+            // 控制仪表盘范围
+            min: 50,
+            max: 200
+          }
+        ]
+      }
+      charts.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="charts" style="height: 600px; width: 600px;"></div>
+</body>
+</html>

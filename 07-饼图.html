@@ -28,7 +28,21 @@
         series: [
           {
             type: 'pie',
-            data
+            data,
+            // 饼图的数值显示
+            label: {
+              formatter: arguments => {
+                return `${arguments.name}使用量${arguments.value}占比${arguments.percent}%`
+              }
+            },
+            // 设置圆环, 圆环需要设置两个半径
+            radius: ['50%', '70%'],
+            // 设置成南丁格尔图
+            roseType: 'radius',
+            // 选中效果, single为仅允许单个圆环出现这种效果, multiple允许多个圆环出现这样的效果
+            selectedMode: 'single',
+            // 选中的偏移量
+            selectedOffset: 30
           }
         ]
       }
