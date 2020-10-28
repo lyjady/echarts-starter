@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>颜色渐变</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let chart = echarts.init(document.querySelector('#echarts'))
+      let option = {
+        title: {
+          text: '显卡销量图'
+        },
+        xAxis: {
+          type: 'category',
+          data: ['RTX 3060', 'RTX 3070', 'RTX 3080', 'RTX 3090']
+        },
+        yAxis: {
+          type: 'value'
+        },
+        label: {
+          show: true,
+          position: 'inside'
+        },
+        barWidth: '50%',
+        series: {
+          name: '销量',
+          type: 'bar',
+          data: [2092, 1892, 1823, 1654],
+          // 设置颜色渐变
+          itemStyle: {
+            // color: {
+            //   // 线性渐变
+            //   type: 'linear',
+            //   // 设置起始点与终止点的相对方向
+            //   x: 0,
+            //   y: 0,
+            //   x2: 0,
+            //   y2: 1,
+            //   // 设置具体位置时的颜色
+            //   colorStops: [
+            //     {
+            //       offset: 0,
+            //       color: '#FF9900'
+            //     },
+            //     {
+            //       offset: 1,
+            //       color: '#CCFFFF'
+            //     }
+            //   ]
+            // }
+            color: {
+              // 径向渐变
+              type: 'radial',
+              // 设置圆心位置与圆的半径
+              x: 0, y: 0, r: 10,
+              colorStops: [
+                {
+                  offset: 0,
+                  color: '#FF9900'
+                },
+                {
+                  offset: 1,
+                  color: '#CCFFFF'
+                }
+              ]
+            }
+          },
+          markPoint: {
+            data: [
+              {
+                type: 'max',
+                name: '最大销量'
+              },
+              {
+                type: 'min',
+                name: '最小销量'
+              }
+            ]
+          },
+          markLine: {
+            data: [
+              {
+                type: 'average',
+                name: '平均值'
+              }
+            ]
+          }
+        }
+      }
+      chart.setOption(option)
+    })
+  </script>
+</head>
+<body>
+<div id="echarts" style="width: 600px; height: 600px"></div>
+</body>
+</html>

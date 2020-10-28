@@ -19,384 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320e87f9-5eb4-4171-9ac9-200e751a2a5c" name="Default Changelist" comment="折线图 散点图 坐标图设置 饼图">
-      <change afterPath="$PROJECT_DIR$/08-地图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-中国空气质量图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10-地图结合散点图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-雷达图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12-仪表盘.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/china.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/130900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/131000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/131100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/140900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/141000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/141100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/150900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/152200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/152500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/152900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/210900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/211000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/211100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/211200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/211300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/211400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/220800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/222400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/230900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/231000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/231100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/231200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/232700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/320900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/321000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/321100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/321200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/321300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/330900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/331000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/331100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/340800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/341800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/350900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/360900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/361000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/361100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/370900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/371700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/410900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/411700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/420900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/421000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/421100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/421200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/421300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/422800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/430900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/431000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/431100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/431200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/431300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/433100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/440900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/441900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/442000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/442100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/445100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/445200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/445300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/450900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/451000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/451100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/451200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/451300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/451400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/460100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/460200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/460300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/460400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/510900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/511900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/512000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/513200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/513300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/513400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/520600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/522300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/522600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/522700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/530900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/532300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/532500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/532600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/532800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/532900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/533100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/533300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/533400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/540600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/542500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/610900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/611000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/620900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/621000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/621100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/621200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/622900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/623000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/630100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/630200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/632800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/640100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/640200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/640300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/640400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/640500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/650100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/650200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/650400.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/650500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/652300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/652700.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/652800.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/652900.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/653000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/653100.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/653200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/654000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/654200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/citys/654300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/110000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/120000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/130000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/140000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/150000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/210000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/220000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/230000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/310000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/320000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/330000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/340000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/350000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/360000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/370000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/410000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/420000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/430000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/440000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/450000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/460000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/500000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/510000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/520000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/530000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/540000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/610000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/620000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/630000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/640000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/650000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/710000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/810000.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map/province/820000.json" afterDir="false" />
+    <list default="true" id="320e87f9-5eb4-4171-9ac9-200e751a2a5c" name="Default Changelist" comment="矢量图数据，空气质量，雷达图，仪表盘">
+      <change afterPath="$PROJECT_DIR$/13-主题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14-调色盘.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15-颜色渐变.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-样式控制.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-图表自适应.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18-动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19-全局echartsAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20-echarts实例API(事件交互).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-饼图.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-饼图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-通用设置.html" beforeDir="false" afterPath="$PROJECT_DIR$/03-通用设置.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -436,8 +69,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/map" />
     </key>
   </component>
@@ -454,7 +87,9 @@
       <workItem from="1603154410070" duration="2965000" />
       <workItem from="1603173099287" duration="1994000" />
       <workItem from="1603413020695" duration="2885000" />
-      <workItem from="1603433362750" duration="858000" />
+      <workItem from="1603433362750" duration="1160000" />
+      <workItem from="1603846207352" duration="3580000" />
+      <workItem from="1603865577875" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="折线图 散点图 坐标图设置 饼图">
       <created>1603174999731</created>
@@ -470,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603175062642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="矢量图数据，空气质量，雷达图，仪表盘">
+      <created>1603434671727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603434671727</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,8 +131,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="折线图 散点图 坐标图设置 饼图" />
-    <option name="LAST_COMMIT_MESSAGE" value="折线图 散点图 坐标图设置 饼图" />
+    <MESSAGE value="矢量图数据，空气质量，雷达图，仪表盘" />
+    <option name="LAST_COMMIT_MESSAGE" value="矢量图数据，空气质量，雷达图，仪表盘" />
   </component>
   <component name="WindowStateProjectService">
     <state x="359" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602811229437">
@@ -505,10 +150,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="662" y="187" key="Github.UntrackedFilesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1602832305304" />
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2" timestamp="1603175063919">
+    <state x="495" y="297" key="Vcs.Push.Dialog.v2" timestamp="1603434676635">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603175063919" />
+    <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603434676635" />
     <state x="559" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1603413667753">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

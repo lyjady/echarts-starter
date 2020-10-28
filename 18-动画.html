@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画</title>
+  <script src="js/echarts.min.js"></script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+  <button onclick="changeData()">改变数据</button>
+  <button onclick="addData()">增加数据</button>
+  <script>
+    let chart = echarts.init(document.querySelector('#echarts'))
+    // chart.showLoading()显示加载动画
+    // chart.hiddenLoading()隐藏加载动画
+    const yData = [322, 433, 321, 423, 546, 435, 646, 645, 934, 1032, 1102, 602]
+    const xData = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+    let option = {
+      // 是否开启动画, 默认为true开启
+      animation: true,
+      // 动画持续时间, 可以配置成回调函数, 返回值就吃动画持续的时间, 参数就是所有动画元素的索引
+      animationDuration: 2000,
+      // 动画曲线, linear表示直线线性, bounceOut表示缓动动画, 具体动画类型参照官方文档
+      animationEasing: 'bounceOut',
+      // 动画元素的阈值, 当某个参与动画的元素类型的数量超过了阈值, 就不会产生动画
+      animationThreshold: 7,
+      title: {
+        text: '月份销量统计图'
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      xAxis: {
+        type: 'category',
+        data: xData,
+        boundaryGap: false
+      },
+      yAxis: {
+        type: 'value',
+        scale: true
+      },
+      series: [
+        {
+          name: '销量',
+          type: 'line',
+          data: yData,
+          markLine: {
+            data: [{type: 'average'}]
+          },
+          markPoint: {
+            data: [
+              {type: 'max'},
+              {type: 'min'}
+            ]
+          },
+          smooth: true,
+          lineStyle: {
+            type: 'solid',
+            color: 'skyblue'
+          }
+        }
+      ]
+    }
+    chart.setOption(option)
+    function changeData() {
+      // 当数据发生改变时, echarts会自动将改变的数据渲染到页面上, 自带数据改变的动画效果
+      for (let i = 0; i < yData.length; i++) {
+        yData[i] += parseInt(Math.random() * 400 - 200)
+      }
+      // 将改变的数据重新设置成option,
+      let option = {
+        series: [
+          {
+            data: yData
+          }
+        ]
+      }
+      // 给echarts设置新的option, echarts会将改变的内容进行替换, option对象内没有变化的不会发生替换, 所以在构建新的option时只需要设置变化的值即可
+      chart.setOption(option)
+    }
+    function addData() {
+      xData.push('其他')
+      yData.push(parseInt(Math.random() * 400))
+      let option = {
+        xAxis: {
+          data: xData
+        },
+        series: [
+          {
+            data: yData
+          }
+        ]
+      }
+      chart.setOption(option)
+    }
+  </script>
+</body>
+</html>

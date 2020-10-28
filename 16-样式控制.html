@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>样式控制</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#echarts'), 'dark')
+      let data = [
+        {
+          name: 'Java',
+          value: 34.2,
+          // 控制具体数据项的样式
+          itemStyle: {
+            // 数据项图表显示的颜色
+            color: 'black',
+          },
+          // 数据项name的颜色
+          label: {
+            color: 'red'
+          },
+          // 鼠标放置到指定item上时的显示样式
+          emphasis: {
+            itemStyle: {
+              color: 'skyblue'
+            },
+            label: {
+              color: 'blue'
+            }
+          }
+        },
+        {name: 'C', value: 38.2},
+        {name: 'C++', value: 31.2},
+        {name: 'Javascript', value: 28.2},
+        {name: 'Python', value: 30.2},
+        {name: 'Golang', value: 26.2}
+      ]
+      let option = {
+        title: {
+          text: '编程语言使用占比',
+          // 控制标题样式
+          textStyle: {
+            color: 'green',
+            fontSize: 20
+          }
+        },
+        tooltip: {
+          type: 'item'
+        },
+        series: [
+          {
+            type: 'pie',
+            data,
+            label: {
+              formatter: arguments => {
+                return `${arguments.name}使用量${arguments.value}占比${arguments.percent}%`
+              }
+            },
+            radius: ['50%', '70%'],
+            roseType: 'radius',
+            selectedMode: 'single',
+            selectedOffset: 30
+          }
+        ]
+      }
+      charts.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>

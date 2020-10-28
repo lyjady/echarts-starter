@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>主题</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#echarts'))
+      let data = [
+        {name: 'Java', value: 34.2},
+        {name: 'C', value: 38.2},
+        {name: 'C++', value: 31.2},
+        {name: 'Javascript', value: 28.2},
+        {name: 'Python', value: 30.2},
+        {name: 'Golang', value: 26.2}
+      ]
+      let option = {
+        title: {
+          text: '编程语言使用占比'
+        },
+        // 配置调色板的颜色, echarts会根据调色板的颜色去设置图表的颜色
+        // 分别可以在主题内, option, series内指定的图表数据, 三处设置调色板的颜色, 根据就近原则来应用设置的图表的颜色
+        // series > option > theme
+        color: ['#FFFFCC', '#FF6666', '#CC9933', '#FFCC33', '#99CC33', '#66CC99'],
+        tooltip: {
+          type: 'item'
+        },
+        series: [
+          {
+            type: 'pie',
+            data,
+            label: {
+              formatter: arguments => {
+                return `${arguments.name}使用量${arguments.value}占比${arguments.percent}%`
+              }
+            },
+            color: ['red', 'green', 'blue', 'purple', 'yellow', 'black'],
+            radius: ['50%', '70%'],
+            roseType: 'radius',
+            selectedMode: 'single',
+            selectedOffset: 30
+          }
+        ]
+      }
+      charts.setOption(option)
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>

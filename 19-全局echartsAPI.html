@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>全局echartsAPI</title>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+  <div id="echarts" style="width: 600px; height: 600px; margin: auto auto"></div>
+  <script>
+    let charts = echarts.init(document.querySelector('#echarts'))
+    // 注册主题
+    // echarts.registerTheme
+    $.get('map/china.json', res => {
+      // 注册地图
+      echarts.registerMap ('china', res)
+      let option = {
+        geo: {
+          type: 'map',
+          map: 'china',
+          roam: true,
+          label: {
+            show: false
+          },
+          zoom: 1,
+        }
+      }
+      charts.setOption(option)
+      // 将多个echarts实例建立联系, 如果下载图片时, 会将建立联系echarts实例对应的图表整合在一张图片里面进行下载
+      // echarts.concat(['echarts实例1', 'echarts实例2'])
+    })
+  </script>
+</body>
+</html>

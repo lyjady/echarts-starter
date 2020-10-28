@@ -54,7 +54,8 @@
             }
           }
         },
-        // 切换series, 数组的值要匹配series的name
+        // 如果展示多个图表, 切换series, 数组的值要匹配series的name
+        // 如果只是一个图表那么data就是切换数据的类型, 柱状图就是x轴, 饼图就是数据数据里面的name
         legend: {
           data: ['销量', '性能']
         },

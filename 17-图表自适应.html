@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图表自适应</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#charts'))
+      let option = {
+        radar: {
+          // 设置各个维度的最大值
+          indicator: [
+            {
+              name: '易用性',
+              max: 100
+            },
+            {
+              name: '功能',
+              max: 100
+            },
+            {
+              name: '拍照',
+              max: 100
+            },
+            {
+              name: '跑分',
+              max: 100
+            },
+            {
+              name: '续航',
+              max: 100
+            }
+          ],
+          // 配置雷达图最外层的图形 circle polygon
+          shape: 'polygon'
+        },
+        series: [
+          {
+            type: 'radar',
+            data: [
+              {
+                name: '苹果手机',
+                value: [88, 94, 87, 86, 90]
+              },
+              {
+                name: '华为手机',
+                value: [45, 34, 53, 100, 43]
+              }
+            ],
+            // 将每一个产品的雷达图形成阴影的面积
+            areaStyle: {
+
+            }
+          }
+        ]
+      }
+      charts.setOption(option)
+      addEventListener('resize', () => {
+        // 当显示大小发生变化图表自适应显示大小
+        charts.resize()
+      })
+    })
+  </script>
+</head>
+<body>
+  <div id="charts" style="height: 600px; width: 100%;"></div>
+</body>
+</html>

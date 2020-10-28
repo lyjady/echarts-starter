@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>echarts实例API(事件交互)</title>
+  <script src="js/echarts.min.js"></script>
+  <script>
+    addEventListener('load', () => {
+      let charts = echarts.init(document.querySelector('#echarts'))
+      let data = [
+        {name: 'Java', value: 34.2},
+        {name: 'C', value: 38.2},
+        {name: 'C++', value: 31.2},
+        {name: 'Javascript', value: 28.2},
+        {name: 'Python', value: 30.2},
+        {name: 'Golang', value: 26.2}
+      ]
+      let legendData = data.map(item => item['name'])
+      console.log(legendData);
+      let option = {
+        title: {
+          text: '编程语言占比',
+        },
+        tooltip: {
+          type: 'item'
+        },
+        legend: {
+          data: legendData
+        },
+        toolbox: {
+          feature: {
+            dataView: {}
+          }
+        },
+        series: [
+          {
+            type: 'pie',
+            data,
+            label: {
+              formatter: arguments => {
+                return `${arguments.name}使用量${arguments.value}占比${arguments.percent}%`
+              }
+            },
+            radius: ['50%', '70%'],
+            roseType: 'radius',
+            selectedMode: 'single',
+            selectedOffset: 30
+          }
+        ]
+      }
+      charts.setOption(option)
+      // 为echarts实例注册点击事件, e为点击事件的回调参数, 该对象不同于Javascript传统点击事件的回调对象, 属于echarts自己的回调对象
+      charts.on('click', e => {
+        console.log(e)
+      })
+      // 取消指定类型的时间监听
+      charts.off('click')
+      // echarts自定了多种不同的时间类型
+      // legendselectchanged为图示发生变化的事件类型, 其他类型参考echarts官方文档
+      charts.on('legendselectchanged', e => {
+        console.log(e)
+      })
+      // 工具栏中数据视图的修改事件
+      charts.on('dataviewchanged', e => {
+        console.log(e)
+      })
+    })
+  </script>
+</head>
+<body>
+  <div id="echarts" style="width: 700px; height: 600px"></div>
+</body>
+</html>
