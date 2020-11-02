@@ -19,17 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320e87f9-5eb4-4171-9ac9-200e751a2a5c" name="Default Changelist" comment="矢量图数据，空气质量，雷达图，仪表盘">
-      <change afterPath="$PROJECT_DIR$/13-主题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14-调色盘.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-颜色渐变.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16-样式控制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-图表自适应.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-全局echartsAPI.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-echarts实例API(事件交互).html" afterDir="false" />
+    <list default="true" id="320e87f9-5eb4-4171-9ac9-200e751a2a5c" name="Default Changelist" comment="主题, 样式, 自适应, 动画, 全局API, 实例API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-通用设置.html" beforeDir="false" afterPath="$PROJECT_DIR$/03-通用设置.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20-echarts实例API(事件交互).html" beforeDir="false" afterPath="$PROJECT_DIR$/20-echarts实例API(事件交互).html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +81,8 @@
       <workItem from="1603413020695" duration="2885000" />
       <workItem from="1603433362750" duration="1160000" />
       <workItem from="1603846207352" duration="3580000" />
-      <workItem from="1603865577875" duration="1524000" />
+      <workItem from="1603865577875" duration="1773000" />
+      <workItem from="1604278143654" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="折线图 散点图 坐标图设置 饼图">
       <created>1603174999731</created>
@@ -112,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603434671727</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="主题, 样式, 自适应, 动画, 全局API, 实例API">
+      <created>1603867359836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603867359836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +135,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="折线图 散点图 坐标图设置 饼图" />
     <MESSAGE value="矢量图数据，空气质量，雷达图，仪表盘" />
-    <option name="LAST_COMMIT_MESSAGE" value="矢量图数据，空气质量，雷达图，仪表盘" />
+    <MESSAGE value="主题, 样式, 自适应, 动画, 全局API, 实例API" />
+    <option name="LAST_COMMIT_MESSAGE" value="主题, 样式, 自适应, 动画, 全局API, 实例API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="359" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602811229437">
@@ -150,10 +151,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="662" y="187" key="Github.UntrackedFilesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1602832305304" />
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2" timestamp="1603434676635">
+    <state x="495" y="297" key="Vcs.Push.Dialog.v2" timestamp="1603867361132">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603434676635" />
+    <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603867361132" />
+    <state x="593" y="305" width="606" height="510" key="find.popup" timestamp="1603867123577">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="593" y="305" width="606" height="510" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603867123577" />
     <state x="559" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1603413667753">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

@@ -64,10 +64,23 @@
       charts.on('dataviewchanged', e => {
         console.log(e)
       })
+
+      let simi = document.querySelector('#simi')
+      simi.addEventListener('click', () => {
+        charts.dispatchAction({
+          type: 'showTip',
+          seriesIndex: 0,
+          dataIndex: 2
+        })
+      })
+      // charts.clear()清空列表实例
+      // charts.setOption()重新设置列表数据
+      // charts.dispose()清空列表实例, 无法通过charts.setOption重新设置数据, charts.clear()可以通过setOption设置数据
     })
   </script>
 </head>
 <body>
   <div id="echarts" style="width: 700px; height: 600px"></div>
+  <button id="simi">模拟用户行为</button>
 </body>
 </html>
